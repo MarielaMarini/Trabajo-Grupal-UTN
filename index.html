@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap Estilos-->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css ">  
+        
+        <!-- Boostrap scripts-->
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+        
+        <!-- jsPDF-->
+        <script src="./js/jspdf.min.js"></script>
+        
+        <!--Hoja de stylo propia-->
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- Icono de nuestro site-->
+        <link rel="icon" type="image/jpg" href="./image/favicon.jpg"/>
+  
+
+
+
+        <title>Responvise Grupo 3</title>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                    <nav class="navbar navbar-expand-lg fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"><img class="img-circle-logo" src="./image/logo.jpg" alt="Grupo III Fitness" class="navbar-brand" width="110" height="80"> </a>
+                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <h1 class="nombrefasterOne-70">Grupo III Fitness</h1>
+                                <div class="nav ms-auto flex-md-row">
+                                  <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#slider-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Inicio</button></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#acercaDeNosotros-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Quienes somos</button></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#asociarse-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Asociarse</button></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#contacto-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Contacto</button></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                
+            </div>        
+       
+        </header>               
+
+
+
+
+        <!-- Main -->
+        <main>
+                
+            <section id="slider">
+                <div class="container-fluid">
+                        <div class="ancla" id="slider-ancla"></div>
+                        <div class="slider">
+                            <ul>
+                            <li> 
+                                <div class="imagen-1">
+                                <img src="./image/Gym1.jpg" alt="Sede CABA"> 
+                                <div class="p-sedes">
+                                    <p class="nombrefasterOne-40">Sede CABA</p>
+                                </div>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="imagen-2">
+                                <img  src="./image/Gym2.jpg" alt="Sede Rosario" > 
+                                <div class="p-sedes">
+                                    <p class="nombrefasterOne-40">Sede Rosario</p>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imagen-3">
+                                <img  src="./image/Gym3.jpg" alt="Sede Mendoza" > 
+                                <div class="p-sedes">
+                                    <p class="nombrefasterOne-40">Sede Mendoza</p>
+                                </div>
+                                </div>    
+                            </li>
+                            <li>
+                                <div class="imagen-4">
+                                <img src="./image/Gym4.jpg" alt="Sede Córdoba" > 
+                                <div class="p-sedes">
+                                    <p class="nombrefasterOne-40">Sede Córdoba</p>
+                                </div>
+                                </div>     
+                            </li>
+                            </ul>
+                        </div>     
+                </div>        
+            </section>
+                
+            <section id="cuerpoPrincipal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                                <div class="titulo">
+                                <br>
+                                <br>
+                                <br>
+                                <h2><strong>Trabajo personalizado para mujeres.</strong> </h2>
+                                </div> 
+                                <br>  
+                                <p class="texto-p-333">Lográ tu mejor figura con entrenamientos  personalizados <br> y exclusivos, adaptados a tus requerimientos personales. <br> Podrás ver resultados asegurados en sólo 90 días.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="container-imagenes-index">
+                                <img class="img-rectangular-bordes-redondeados img-fluid" src="./image/strong-women-planking.jpg" alt="mujeres haciendo ejercicio"> 
+                            </div>     
+                        </div>
+                    </div>   
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row">
+                            <div class="col-md-6">
+                                <div class="container-imagenes-index">
+                                <img class="img-rectangular-bordes-redondeados img-fluid" src="./image/arm-back-muscles.jpg" alt="mujeres haciendo ejercicio"> 
+                                </div>     
+                            </div>
+                            <div class="col-md-6">
+                                <div class="titulo">
+                                <br>
+                                <br>
+                                <br>
+                                <h2><strong>Sobrecarga y musculación.</strong> </h2>
+                                </div> 
+                                <br>  
+                                <p class="texto-p-333" >Tenemos planes especiales, diagramados para reducir calorías y aumentar masa musucular. Verás resultados en un corto plazo, no más de 90 días de ejercitación.</p>
+                            </div>
+                            </div>   
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row">
+                            <div class="col-md-6">
+                                <div class="titulo">
+                                <br>
+                                <br>
+                                <br>
+                                <h2><strong>Clases de tango, danzas clásicas y <br> bailes modernos de todo tipo.</strong> </h2>
+                                </div> 
+                                <br>  
+                                <p class="texto-p-333">Uníte a nuestras clases de baile y logra la figura que deseas, con un método divertido y con mínimo esfuerzo, <br>te sorprenderá ver resultados en forma casi inmediata.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="container-imagenes-index">
+                                <img class="img-rectangular-bordes-redondeados img-fluid" src="./image/dance-class-in-studio.jpg" alt="mujeres haciendo ejercicio"> 
+                                </div>     
+                            </div>
+                </div>   
+            </section>
+                
+            <section id="cuerpoAcercaNosotros">
+                <div class="container">  
+                            <div class="ancla" id="acercaDeNosotros-ancla"></div>
+                            <div class="row justify-content-center">
+                                <hr/> 
+                                <div class="col-md-6">
+                                    <div class="container-imagenes-index ">
+                                    <img class="img-rectangular-bordes-redondeados img-fluid" src="./image/sedes.jpg" alt="mujeres haciendo ejercicio"> 
+                                    </div>     
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="titulo">
+                                        <h2><strong>Quienes somos.</strong> </h2>
+                                    </div> 
+                                    <br>  
+                                    <p class="texto-p-333">
+                                        Inauguramos nuestro primer gimnasio en el año 2003, con el propósito de que todos puedan acceder a la práctica de actividad física, ampliando nuestro concepto a una experiencia de calidad para nuestros socios.
+                                        Actualmente, contamos con sedes en distintos puntos del país, con instalaciones y equipos de última tecnología. Además, nuestro staff cuenta con calificados instructores y profesores de educación física.
+                                        Continuamos en constante innovación, al servicio de nuestros socios. 
+                                    </p>
+                                </div>
+                            </div>
+                </div> 
+            </section>      
+                
+            <section id="asociarse">
+                <div class="container">
+                    <div class="ancla" id="asociarse-ancla"></div>
+                    <div class="row">
+                            <hr/> 
+                            <div class="col-md-12">
+                                <div class="titulo">
+                                    <h2><strong>Entrená con nosotros.</strong> </h2>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <P class="texto-p-333"> Elejí uno de nuestros planes y consultá nuestras promociones.</P>
+                            </div>
+                        </div>
+                    </div>      
+                    <br>
+                
+                    <div class="row">
+                        <div class="col-md-3 sombra-planes" id="plan-1">
+                            <form id="form-plan-1"> 
+                                <div class="container-imagenes-index ">
+                                    <img class="gymasociarse img-fluid" src="./image/arm-back-230-310.jpg" alt="Plan Black Individual"> 
+                                </div>
+                                <hr/>
+                                <div id="Plan1Descripcion">
+                                    <div class="texto-impact texto-impact-titulo-plan" id ="p-plan-1-titulo"><p><b><i>Plan Black Individual</i></b></P></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Rutinas personalizadas</p></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Pase libre pileta de natación</p></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Y muchos beneficios más</p></div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-hover btn-active btn-danger" type="button" id="btnPlan-1" name="btnPlan-1">Asociarse</button>
+                                </div>
+                                <br>
+                            </form>
+                        </div>
+                
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 sombra-planes " id="plan-2">
+                            <form id="form-plan-2">
+                                <div class="container-imagenes-index">
+                                    <img class="gymasociarse img-fluid" src="./image/gymasociarse.jpg" alt="Plan grupal"> 
+                                </div>
+                                <hr/>
+                                <div id="Plan2Descripcion"> 
+                                    <div class="texto-impact texto-impact-titulo-plan" id="p-plan-2-titulo"><p><b><i>Plan Grupal</i></b></p></div>
+                                    <div id="p-plan-2-linea1"><p class="texto-impact texto-impact-descripcion-plan">Membresia anual para grupos</p></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Rutinas personalizadas por grupo</p></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Y muchos beneficios más</p></div>
+                                </div>      
+                                <div>
+                                    <button class="btn btn-hover btn-active btn-danger" type="button" id="btnPlan-2" name="btnPlan-2">Asociarse</button>
+                                </div>
+                                <br>
+                            </form>          
+                        </div>
+                
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 sombra-planes" id="plan-3">
+                            <form id="form-plan-3">
+                                <div class="container-imagenes-index">
+                                    <img class="gymasociarse img-fluid"  src="./image/Gym5-230-310.jpg" alt="Plan corporativo"> 
+                                </div>
+                                <hr/>
+                                <div id="Plan3Descripcion">  
+                                    <div class="texto-impact texto-impact-titulo-plan" id="p-plan-3-titulo"><p><b><i>Plan Corporativo</i></b></p></div>
+                                    <div id="p-plan-3-linea1" ><p class="texto-impact texto-impact-descripcion-plan">Planes a partir de 30 cápitas</p></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Rutinas personalizadas</p></div>
+                                    <div><p class="texto-impact texto-impact-descripcion-plan">Y muchos beneficios más</p></div>
+                                </div>   
+                                <div>
+                                    <button class="btn btn-hover btn-active btn-danger" type="button" id="btnPlan-3" name="btnPlan-3">Asociarse</button>
+                                </div>
+                                <br>
+                            </form>        
+                        </div>
+                    </div>  
+                    <!-- Formulario dos pasos-->
+                    <br> 
+                    <div class="row">
+                                
+                        <form  id="step-1">
+                                
+                                <div class="col-md-12 sombra-planes">
+                                    <br>
+                                    <div id="plan-seleccionado-step1">Plan seleccionado <i><label class="texto-impact texto-impact-seleccionado-label" id="lbl-plan-coti" ></label></i> para cotizar el plan, por favor complete los siguientes datos</div>
+                                        <br>
+                                        <label class="texto-step1-1" id="lbl-nombre" >Nombre:</label>
+                                        <input class="input-cotizacion" type="text" id="name-coti" name="name-coti" placeholder="Ingresa tu nombre"><h7 style="color: #333"></style>*</h7>  
+                                        <label class="texto-step1-1" id="lbl-email" >Email:</label>
+                                        <input  class="input-cotizacion" type="email" id="email-coti" name="email-coti" placeholder="Ingresa tu email"><h7 style="color: #333"></style>*</h7>  
+                                        <button class="btn btn-hover btn-active btn-danger" type="button" id="next-btn-coti" >Cotizar</button>
+                                        
+                                        <div class="texto-step1-1 texto-margin-step1-1">  * campos obligatorios</div>
+                                        
+                                        <br>
+                                        
+                                </div>  
+                        </form>                            
+                    </div>  
+                    <div class="row">
+                            <div class="col-md-12">
+                                <form class="step-2"  id="step-2">
+                                    <div class="sombra-planes summary">
+                                        <p class="texto-p-333"> <b> Cotización del plan: </b> </p>
+                                        <div class="plan-seleccionado-step1" id="summary">  </div>
+                                        <div class="d-grid gap-3 justify-content-end mb-3">
+                                             <button class="btn btn-hover btn-active envio-cotizacion-pdf-margin-left btn-danger" type="button" id="next-btn-coti" >Exportar a PDF</button>
+                                        </div>
+                                    </div>
+                                </form>  
+                             </div>
+                    </div> 
+                    <!-- Fin fomrulario dos pasos-->
+                            
+                </div>
+            </section>
+                
+            <section id="contacto">
+                <div class="container"> 
+                    <div class="row">
+
+                         <div class="ancla" id="contacto-ancla"></div>
+                                
+                                <div class="col-md-6 ">
+                                    <form action ="" id="frmContacto" name="formularioContacto" method="get">
+                                        
+                                          
+                                            <div class = "formulario-contacto">
+                                               
+                                                <br>
+                                                <div class="refe">
+                                                        <div class="conta">
+                                                            <h1>Contacto</h1>
+                                                        </div> 
+                                                        <input class="ingresos" type="name" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> <h7 style="color: #fff">*</style> </h7>     
+                                        
+                                                        <input class="ingresos" type="name" id="apellido" name="apellido" placeholder="Ingresa tu apellido"> 
+                                        
+                                                        <input class="ingresos" type="number" id="edad" name="edad" placeholder="Ingresa tu edad"> <h7 style="color: #fff">*</style> </h7>     
+                                        
+                                                        <input class="ingresos" type="email" id="email" name="email" placeholder="Ingresa tu email"> <h7 style="color: #fff">*</style> </h7>     
+                                        
+                                                        <input class="ingresos" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono"> 
+                                                        <br>
+                                                        <br>
+                                                        <p class="texto-contacto">Contanos qué clases o ejercicios te interesan:</p>
+                                                        <textarea class="ingreso1" id ="comentario" name="comentario" rows="4" placeholder="Comentarios"></textarea> <h7 style="color: #fff">*</style> </h7> 
+                                                </div>
+                                                <p class="texto-contacto-1">* campos obligatorios</p>
+                                                
+                                                <div class="d-grid gap-3 justify-content-center mb-3">
+                                                        <button class="btn btn-hover btn-active btn-danger" type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
+                                                </div>
+                                            </div>
+                                        
+                                
+                                    </form>    
+                                </div>        
+                                 
+                        </div>        
+                    </div>
+                </div>  
+                <br>
+                <br>
+            </section>
+            
+            
+        </main>
+       
+        <!-- Footer-->
+
+        <footer class="footer">
+            <section id="section-footer">
+                    <div class="container">
+                        
+                        <div class="logo-footer">
+                            <img class="img-circle-logo" src="./image/logo.jpg" alt="Fitness club" class="navbar-brand">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <hr/>
+                        <div class="containerfooter">
+                            <p>Sede CABA: Av. Neuquén 545, CABA, Argentina.</p>
+                            <p>Sede Rosario: Bartolomé Mitre 1897, Rosario, Santa Fé, Argentina.</p>
+                            <p>Sede Mendoza: Av. San Martín 2488, Ciudad, Mendoza, Argentina.</p>
+                            <p>Sede Córdoba: Soler 121, Córdoba Capital, Argentina.</p>
+                            <div class="container-redesSociales-footer">
+                            <div class="container-redesSociales-footer">
+                                <a href="https://instagram.com/grupoiii789/" target="_blank"> <img class="img-1" src="./image/bxl-instagram-alt.svg" alt="instagram"></a>
+                                <a href="https://facebook.com" target="_blank"> <img class="img-1" src="./image/bxl-facebook-circle.svg" alt="facebook"></a>
+                                <a href="https://twitter.com" target="_blank"> <img class="img-1" src="./image/bxl-twitter.svg" alt="twitter"></a>
+                                <a href="https://api.whatsapp.com/send/?phone=541126062439&text&type=phone_number&app_absent=0" target="_blank"> <img class="img-1" src="./image/icons8-whatsapp.svg" alt="whastsapp"> </a>
+                            </div>
+                            </div>
+                            <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <hr/> 
+                                <a class="texto-boton-massn" onclick="staffMostrar()"><button class="btn btn-hover btn-active btn-danger" type="button" id="btnMasAcercaNosotros" name="btnMasAcercaNosotros">Más acerca de nosotros</button></a>
+                              
+                            </div>
+                    </div>
+                    <div class="container">
+
+                            <div id="staff">
+                                <br>
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <h3 class="texto-staff-desarrollo"><i>Staff de desarrollo</i></h3>
+                                    </div>
+
+
+                                </div>
+                                
+                                <div class="row">
+                                    
+
+                                    <div class="col-md-3"> 
+                                            <div class="sombra caja1">
+                                            <h2>Marquez Ana</h2>
+                                            <p>"Soy Ana, soy programadora de Cobol, trabajo actualmente <br> en administración, pero estoy encantada con probar <br> lenguajes de web."</p>
+                                            <img class="img-circle-staff img-fluid" src="./image/ana.jpg" alt="Marquez Ana">  
+                                            </div>     
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="sombra caja1">
+                                            <h2>Marini Mariela</h2>
+                                            <p>"Soy técnica en administración <br> de empresas y estoy <br> aprendiendo programación."</p>
+                                            <br>
+                                            <br>
+                                            <img class="img-circle-staff img-fluid" src="./image/mariela.jpg" alt="Marini Mariela" >
+                                        </div>     
+                                    
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="sombra caja1">
+                                            <h2>Manresa Mauricio</h2>
+                                            <p>"Diseñador Web Jr., buscando <br> la superación diaria, siempre <br> se puede hay que creer <br> en uno mismo".</p>
+                                            <br>
+                                            <img  class="img-circle-staff img-fluid" src="./image/FotoMauri.jpg" alt="Maurico Manresa" >
+                                        </div>     
+                                    </div>    
+                                    <div class="col-md-3">
+                                        <div class="sombra caja1">
+                                            <h2>Mourad Adrian</h2>
+                                            <p>"Soy analista programador, <br> con especial interés <br> en las nuevas tecnologías informáticas".</p>
+                                            <br>
+                                            <img  class="img-circle-staff img-fluid" src="./image/am.jpg" alt="Adrian Mourad" >
+                                        </div>
+                                    </div>         
+                                </div>   
+
+                            
+                            </div>
+                     </div>       
+                         
+                     <div class="container">
+                            <hr/> 
+                            <div class="row">
+                                <div class="col-md-12">
+                                <p class="texto-copywrite">(c) 2023 by Grupo III - Comisión 184 - curso Desarrollador Web Inicial. UTN - Argentina Programa 4.0</p>
+                                </div>        
+                            </div>
+                            </div>
+                        </div> 
+                    
+                
+                    
+            </section>        
+        </footer>
+        
+        
+              <script src="./js/script.js"></script>
+
+
+
+
+
+        
+        
+    </body>
+</html>

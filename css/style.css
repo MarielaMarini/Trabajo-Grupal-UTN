@@ -1,0 +1,575 @@
+/* Principal */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+/* Manejo de fuentes instalada localmente */
+/*@import url('./fonts/FasterOne-Regular.ttf');*/
+@font-face {
+    font-family: 'Faster One';
+    src: url('./fonts/FasterOne-Regular.ttf');
+}
+.nombrefasterOne-70{
+    font-family: 'Faster One', cursive;
+    font-size: 70px;
+    margin-left: 40px;
+}
+
+
+.nombrefasterOne-40{
+    font-family: 'Faster One', cursive;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+
+
+
+
+/* Header */
+
+
+.img-circle-logo {
+    background: rgb(240, 163, 56, 0.7);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(20px  20px 20px #333 );
+    z-index: 1;   /* ordena los elementos por acoplamiento */
+}
+
+ 
+.header {
+    color: white;
+}
+
+.navbar {
+    
+    background-color: #C60808;
+}
+
+.navbar-collapse {
+    align-items: left;
+    justify-content: end;
+}
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    background: rgb(250,249,251);
+    background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
+}
+
+.nombre {
+    font-size: 55px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+/* estilo de los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #741818;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px #333;
+    transition: all 500ms ease;
+}
+
+.btn-hover:hover {background-color: rgba(253,135,29,1)}
+
+.btn-active:active {
+    background-color: #cc0404;
+    box-shadow: 0 0.5em #666;
+    transform: translateY(4px);
+    color: #FFF;
+}
+
+
+
+/* Main */
+
+/* slider */
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambioFoto 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* Ajusto el tamaño de las imagenes dentro del contenero padre */
+.slider img {          
+   width: 100%;
+    height: 500px;
+    object-fit: cover;    /* la imagen se ajusta al tamaño del padre */
+}
+
+/* controla los estilos de los parrafos debajo de cada foto del slider */
+.p-sedes {
+    top: 50%;
+    left: 50%;  
+    text-size-adjust: initial;
+    color: rgba(253,135,29,1);
+    font-size: 38px;
+}
+
+/* configuro las paradas de cada foto */ 
+@keyframes cambioFoto {
+    0% {margin-left: 0;}
+    20% {margin-left: 0; }
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%; }
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%; }
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%; }
+}
+
+/* fin slider */
+
+/* titulo de cada foto */
+.titulo {
+    color: #5d0404;
+    font-size: 60px;
+}
+
+/* Configuro cada foto al lado de los titulos */
+.container-imagenes-index {
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.container-imagenes-index:hover{
+    filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+    transition: 3s;
+}
+
+
+.imagen-hover-gris:hover{
+    filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+    transition: 3s;
+}
+
+.imagen-hover-gris-sombra:hover{
+    filter: drop-shadow(20px  20px 20px #333 )  grayscale(80%) ;
+}
+
+
+.img-rectangular-bordes-redondeados {
+    width:80%;
+    height:70%;
+    border-radius: 35px;
+    filter: drop-shadow(20px  20px 20px #333 );
+    margin-right: 1rem;
+    float: center;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+.row {
+    justify-content: center;
+}
+
+/* Para controlar formulario de dos pasos */
+form {
+    margin-bottom: 20px;
+}
+
+#step-1 {
+    display: none;
+}
+
+#step-2 {
+    display: none;
+}
+
+.step-2 {
+    border:3px solid orange;
+    border-radius: 10px;   
+}
+
+.envio-cotizacion-pdf-margin-left1 {
+    margin-left: 12em;
+}
+
+.p-333 {
+    color: #333;
+}
+
+
+.sombra-planes {
+    box-shadow: 5px 5px 15px gray;
+}
+
+
+#step-1 {
+
+
+
+    border:3px solid orange;
+    border-radius: 22px;
+    background-color:  rgba(63, 61, 61, 0.15);
+    text-align: center; 
+    color:antiquewhite;
+
+}
+
+.texto-margin-step1-1 {
+    text-align: left;
+}
+
+
+#summary {
+    border-radius: 22px;
+    background-color:  rgba(63, 61, 61, 0.15); 
+    text-align: left;
+    color: #333;
+    padding: 10px;
+}
+
+
+#plan-seleccionado-step1{
+    color:  #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#plan-seleccionado-label{
+    color: #333;
+    font-size: 7px;
+    font-weight: bold;
+}
+.texto-impact-seleccionado-label {
+    font-size: 25px;
+}
+
+.texto-impact {
+    font-family:Impact;
+    font-style: oblique;
+    color: #333;
+    
+    object-fit: cover;
+}
+
+.texto-impact-titulo-plan {
+    font-size: 30px;
+    /*letter-spacing: 0.15em;*/
+}
+
+.texto-impact-descripcion-plan {
+    font-size: 20px;
+}
+
+ 
+
+.texto-step1-1 {
+    
+    font-size: 80%;
+    color: #333;
+    
+}
+
+
+
+/* fin control formulario de dos pasos */
+
+
+.texto-p-333{
+    font-size: 25px;
+}
+
+
+/*Asociarse*/
+#asociarse{
+    padding-bottom: 7px;
+}
+
+.gymasociarse{
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 265%;
+    border-radius: 20px;
+    float: center;
+    filter: drop-shadow(10px  10px 10px #333 );
+}
+
+#plan-1 {
+    border:3px solid orange;
+    border-radius: 22px;
+    background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
+    text-align: center;
+    color:antiquewhite;
+}
+
+#plan-2 {
+    border:3px solid orange;
+    border-radius: 22px;
+    background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
+    text-align: center;
+    color:antiquewhite;
+}
+
+#plan-3 {
+    border:3px solid orange;
+    border-radius: 22px;
+    background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
+    text-align: center;
+    color:antiquewhite;
+}
+
+
+/* Formulario de Contacto  */
+
+
+
+#contacto{
+    background: linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    justify-content:flex-start; /* space-between;*/
+    padding: 1rem;
+}
+
+
+.conta{
+   /* margin-left: 16.6rem;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.refe{
+    /*margin-left: 8rem;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
+    text-align: left;
+    
+}
+
+/* estilo campo del formulario */
+.ingresos{
+    /*margin-left: 7em;*/
+    padding: 0.3125em;
+    border-radius: 0.625em;
+    background-color: #f9d4c6;
+    margin-bottom: 1.875em;
+    box-shadow: 8px 8px 13px #333;
+    cursor: pointer;
+}
+
+/* estilo campo comentario */
+.ingreso1{
+
+    /*margin-left: 7em;
+    padding: 0.3125em;
+    float: left;
+    
+   
+    
+    */
+    width: 95%;
+    height: auto;
+    border-radius: 0.625em;
+    background-color: rgb(249, 212, 198);
+    box-shadow: 8px 8px 13px #333;
+    cursor: pointer;
+
+ 
+}
+
+/*.conta{
+    margin-left: 16.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+*/
+.ingresos:hover{
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+    transition: box-shadow 0.3s ease;
+}
+
+.ingreso1:hover{
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+    transition: box-shadow 0.3s ease;
+}
+
+.texto-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    /*margin-left: 8.5rem;*/
+}
+
+.envio-margin-left1{
+    display: flex;
+    justify-content: center; 
+    
+    
+}
+
+
+.texto-contacto-1 {
+    /*margin-left: 8.5rem;*/
+    font-size: 80%;
+    color: #fefefe;
+    text-align: left;
+}
+
+
+.ancla  {
+    padding-top: 190px; /* es el ancho de mi cabecera fija, para que no se tape el contenido debajo de la cabecera */
+}
+
+
+
+
+/* FOOTER */
+
+
+/* STAFF */
+
+
+#staff {
+
+    display: none;
+}
+
+
+.img-circle-staff {
+    background: rgb(240, 163, 56, 0.7);
+    border-radius: 50%;
+    filter: drop-shadow(20px  20px 20px #333 );
+    object-fit: cover;
+    
+    filter: grayscale(100%);
+    width:10em;
+    height:10em;
+}
+
+
+.img-circle-staff:hover{
+    filter: grayscale(0%) ;
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 3s;
+    width:10em;
+    height:10em;
+}
+
+/* para manejar la primera caja */
+.caja1 {     
+    color: darkkhaki;
+    border:3px solid brown;
+    border-radius: 22px;
+    background-color: rgb(255, 127, 210); /*no lo obedece*/
+    background: linear-gradient(360deg, rgba(253,135,29,1) 0%, rgba(92, 2, 2)100%);
+    text-align: center;
+    padding-top : 5px;
+    padding-bottom : 15px;
+}
+
+.sombra {
+    box-shadow: 10px 10px 20px #333;
+}
+
+
+.espacio {
+    padding-left: 15px;
+}
+
+
+.texto-staff-desarrollo {
+
+    font-size: 100%;
+    color : #fefefe;
+}
+
+/* FIN STAFF */
+
+.footer {
+    background-color:  #C60808;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    color: white;
+    justify-content:space-between;
+    padding: 1rem;
+}
+
+.container-redesSociales-footer {
+    background-color: #C60808;
+}
+
+.a-footer {
+    text-decoration: none;
+    color: whitesmoke;
+} 
+
+.espaciado {
+    padding-top: 60px;
+}
+
+.footer-alineacion {
+    text-align: center;
+}
+
+hr {
+    border-top: 2px solid #fff;
+}
+
+.logo-footer{
+    height: 50px;
+    padding-top: 20px;
+}
+
+.texto-copywrite {
+    font-size: 75%;
+    color : #fefefe;
+}
